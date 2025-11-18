@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PortUs - Full Service </title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Orbitron:wght@600&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@800&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<!-- Custom Cursor -->
+<div class="custom-cursor"></div>
+<div class="cursor-follower"></div>
+
+<!-- Loading Screen -->
+<div class="loading-screen" id="loadingScreen">
+  <div class="preloader-gif"></div>
+  <div class="loading-text">Loading experience</div>
+  <div class="progress-bar">
+    <div class="progress-fill"></div>
+  </div>
+  <div id="progressText">00%</div>
+</div>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="header-left">
+    <img src="/img/2D LOGO-01.png" alt="Portus Logo" class="logo" />
+    <span class="brand-name">PORT US</span>
+  </div>
+
+  <!-- Sound Toggle -->
+  <div class="center" id="sound-toggle">
+    <div class="eq">
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div class="label">Sound</div>
+  </div>
+
+  <!-- Background Music -->
+  <audio id="bg-music" src="/imgs/WhatsApp Audio 2025-11-14 at 14.20.28_e04fbdb2.mp3" loop></audio>
+
+  <!-- Navigation -->
+  <nav class="header-right">
+    <button class="nav-toggle">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="nav-links">
+      <a href="#intro">Intro</a>
+      <a href="#scroll-gallery">Our Services</a>
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<div class="section-container">
+  <section class="hero">
+    <!-- Background Video -->
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="img/6d413e49-e870-4886-a4f0-81b4e857bed0.mp4" type="video/mp4" />
+    </video>
+
+    <!-- Video Overlay -->
+    <div class="hero-overlay"></div>
+  </section>
+</div>
+
+
+      <!-- Icebergs -->
+
+     <div class="hero-background">
+
+  <div class="iceberg iceberg-1"></div>
+  <div class="iceberg iceberg-2"></div>
+  <div class="iceberg iceberg-3"></div>
+</div>
+
+<div class="hero-text hero-text-back">
+  <div class="text-stack">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 120" preserveAspectRatio="xMidYMid meet">
+      <defs>
+        <linearGradient id="blueWhiteOrange" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="white" />
+          <stop offset="50%" stop-color="white" />
+          <stop offset="100%" stop-color="orange" />
+        </linearGradient>
+      </defs>
+      <text x="10" y="100" font-family="Bebas+Neue" font-size="140" font-weight="300"
+        fill="url(#blueWhiteOrange)" style="transition: text-shadow 0.3s ease;">
+        PORT US
+      </text>
+    </svg>
+  </div>
+</div>
+
+<div class="wave-divider">
+  <video class="divider" autoplay muted loop playsinline>
+    <source src="/img/3295292f-6c29-4735-93c7-9b82701933a0.webm" type="video/mp4">
+  </video>
+</div>
+
+
+<!-- About Section Background Video -->
+<video class="bg-video" autoplay muted loop playsinline>
+  <source src="img/ffa2d99f-c825-445c-9cc3-dbbe414995a9.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+
+<!-- Dark overlay -->
+<div class="overlay"></div>
+
+
+<!-- Intro Section -->
+<div class="section-container">
+  <section id="intro">
+    <div class="content">
+      <p class="small-title">WHO WE ARE</p>
+
+      <h1 class="main-text">
+        Our mission is to empower businesses to thrive in a global
+        <span class="highlight"> marketplace by providing expert,</span>
+        reliable, and integrated logistics solutions.
+      </h1>
+    </div>
+
+    <!-- Glowing orb -->
+    <div class="orb"></div>
+
+    <!-- Iceberg -->
+    <img src="/img/iceb_1.png" alt="Iceberg" class="icebergs">
+  </section>
+</div>
+
+
+
+ <div class="section-container">
+  <section class="next">
+    <div class="content">
+
+      <!-- Main Headline -->
+      <h1 class="main-headline">Your Journey to Seamless Logistics: Plan, Execute, and Expand.</h1>
+
+      <!-- Logistics Steps -->
+      <div class="logistics-steps">
+        <div class="step">
+          <h3>Plan</h3>
+          <p>We meticulously plan your logistics strategy, anticipating challenges and creating a robust framework.</p>
+        </div>
+
+        <div class="step">
+          <h3>Execute</h3>
+          <p>We execute with precision and technical expertise, ensuring your cargo reaches its destination safely and on time.</p>
+        </div>
+
+        <div class="step">
+          <h3>Expand</h3>
+          <p>We help your business expand its reach and potential by providing a reliable and scalable supply chain partner.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Iceberg Image -->
+    <img src="/img/iceb_2.png" alt="Iceberg Left" class="iceberg-left">
+
+    <!-- Dots Section -->
+    <div class="dots">
+      <div class="dot-item active">
+        <img src="/img/Untitled design.gif" alt="Vision">
+        <p>Door Pick</p>
+      </div>
+
+      <div class="dot-item">
+        <img src="/img/Untitled design.gif" alt="Strategy">
+        <p>Vessel Planning</p>
+      </div>
+
+      <div class="dot-item">
+        <img src="/img/Untitled design.gif" alt="Execution">
+        <p>Customs Clearances</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<div class="section-container">
+  <section class="next2">
+    <div class="content">
+      <div class="small-title">WE BELIVE</div>
+
+      <h1>
+        Our mission is to empower businesses to thrive in a global
+        <span class="orb"></span>
+        marketplace by providing expert,
+        <span class="fade-text">reliable, and integrated logistics solutions.</span>
+      </h1>
+    </div>
+
+    <!-- Iceberg Image -->
+    <img src="/img/iceb_1.png" alt="Iceberg Right" class="iceberg-right">
+  </section>
+</div>
+
+
+<!-- Services Section -->
+<section class="pin-section" id="scroll-gallery">
+
+  <h2 class="section-titles">Our Comprehensive Logistics Services</h2>
+
+  <div class="glass-services">
+
+    <!-- Card 01 -->
+    <div class="glass-card">
+      <div class="content">
+        <h2>01</h2>
+        <h3>Freight & Transport Optimization</h3>
+        <p>
+          We focus on finding the best routes and methods for your cargo to ensure it moves with speed, reliability,
+          and cost-effectiveness.
+        </p>
+
+        <ul class="service-list">
+          <li>Multimodal Transport (Road, Rail, Air, Sea)</li>
+          <li>ODC/OOG & Heavy Lift Transport</li>
+          <li>Chartering Services & Breakbulk</li>
+          <li>RORO (Roll On/Roll Off) Transport</li>
+        </ul>
+
+        <a href="#">Learn More</a>
+      </div>
+    </div>
+
+    <!-- Card 02 -->
+    <div class="glass-card">
+      <div class="content">
+        <h2>02</h2>
+        <h3>Specialized Project Logistics</h3>
+        <p>
+          Our expertise in handling complex projects ensures every detail is managed with precision and technical
+          excellence.
+        </p>
+
+        <ul class="service-list">
+          <li>Dismantling & Relocation Partner</li>
+          <li>Project Cargo & Auction Logistics</li>
+          <li>Green Energy, Oil & Gas, and Mining Projects</li>
+          <li>Temperature-Controlled Logistics</li>
+        </ul>
+
+        <a href="#">Learn More</a>
+      </div>
+    </div>
+
+    <!-- Card 03 -->
+    <div class="glass-card">
+      <div class="content">
+        <h2>03</h2>
+        <h3>Strategic Planning & Management</h3>
+        <p>
+          We offer end-to-end supply chain solutions emphasizing proactive planning and measurable performance.
+        </p>
+
+        <ul class="service-list">
+          <li>Sourcing Agent for Raw Materials</li>
+          <li>Supply Chain & Inventory Management</li>
+          <li>Warehousing & Order Preparation</li>
+          <li>End-to-end B2B2C Operations</li>
+        </ul>
+
+        <a href="#">Learn More</a>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="industries-section" id="industries-gallery">
+
+  <h2 class="section-titles">Tailored Logistics for Your Industry.</h2>
+
+  <div class="left">
+    <video src="imgs/vdo1.webm" class="active" autoplay muted loop></video>
+    <video src="imgs/vdo2.webm" autoplay muted loop></video>
+    <video src="imgs/vdo3.webm" autoplay muted loop></video>
+    <video src="imgs/vdo4.webm" autoplay muted loop></video>
+    <video src="imgs/vdo2.webm" autoplay muted loop></video>
+    <video src="imgs/vdo1.webm" autoplay muted loop></video>
+    <video src="imgs/vdo4.webm" autoplay muted loop></video>
+    <video src="imgs/vdo3.webm" autoplay muted loop></video>
+  </div>
+
+  <div class="right">
+    <div class="text active">
+      <p>Healthcare Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <div class="text">
+      <p>Aid & Relief logistics with speed and precision, supporting disaster response and humanitarian efforts.</p>
+    </div>
+
+    <div class="text">
+      <p>Automotive logistics tailored for just-in-time delivery, minimizing downtime in production lines.</p>
+    </div>
+
+    <div class="text">
+      <p>Industrial project logistics that handle oversized and heavy cargo with expert planning.</p>
+    </div>
+
+    <div class="text">
+      <p>Specialized Aerospace logistics with high compliance and security standards.</p>
+    </div>
+
+    <div class="text">
+      <p>Defense sector logistics with confidentiality, reliability, and precision.</p>
+    </div>
+
+    <div class="text">
+      <p>Fashion & Retail supply chain support for seasonal, fast-moving demands.</p>
+    </div>
+
+    <div class="text">
+      <p>General cargo solutions ensuring efficiency and cost-effectiveness.</p>
+    </div>
+  </div>
+
+</section>
+
+
+
+
+  <!-- Next Section Contact -->
+
+  <section class="contact-form" id="contact">
+  <div class="contact-form__container">
+
+    <!-- Left Side -->
+    <div class="contact-form__left">
+      <div class="contact-form__glow-circle"></div>
+      <h1 class="contact-form__title">
+        A similar call to action <br>that invites direct engagement?
+      </h1>
+
+      <form class="contact-form__form" id="contactForm">
+        <div class="contact-form__field">
+          <label class="contact-form__label">Name</label>
+          <input class="contact-form__input" type="text" name="name" placeholder="Your name" required>
+        </div>
+
+        <div class="contact-form__field">
+          <label class="contact-form__label">Email</label>
+          <input class="contact-form__input" type="email" name="email" placeholder="Your email" required>
+        </div>
+
+        <div class="contact-form__field contact-form__field--full">
+          <label class="contact-form__label">Message</label>
+          <textarea class="contact-form__textarea" name="message" placeholder="Your message" required></textarea>
+        </div>
+
+        <button class="contact-form__button" type="submit">SEND</button>
+      </form>
+    </div>
+
+    <!-- Right Side -->
+    <div class="contact-form__right">
+      <h4>Start Your Journey with Portus Logistics.</h4>
+      <p>
+        <span style="color:#33d1ff;">Connect with our team</span> to discuss your unique logistics needs
+        and discover how we can help you navigate your global supply chain.
+      </p>
+      <p>Prepare for a quick response</p>
+      <a href="mailto:contact@portus.com">sales@portuslogistics.com</a>
+    </div>
+  </div>
+</section>
+
+<div id="pdfRoot"></div>
+
+<section class="grid">
+
+  <!-- Left: Input Form -->
+  <div class="card" id="inputCard">
+    <h2>Enter shipment & machine details</h2>
+
+    <div class="input-grid">
+      <div>
+        <label for="model">Crane Model</label>
+        <input id="model" type="text" placeholder="e.g. XCMG QY25" />
+      </div>
+
+      <div>
+        <label for="tons">Crane Tons</label>
+        <input id="tons" type="number" min="0" step="1" value="50" />
+      </div>
+
+      <div>
+        <label for="cbm">Total CBM (m³)</label>
+        <input id="cbm" type="number" min="0" step="0.001" value="135" />
+      </div>
+
+      <div>
+        <label for="machineUSD">Machine Cost (USD)</label>
+        <input id="machineUSD" type="number" min="0" step="0.01" value="25000" />
+      </div>
+
+      <div>
+        <label for="truckingRate">China Trucking Rate (₹)</label>
+        <input id="truckingRate" type="number" min="0" step="0.01" value="60000" />
+      </div>
+
+      <div>
+        <label for="exRateInput">EX Rate (₹ per USD)</label>
+        <input id="exRateInput" type="number" min="0" step="0.01" value="89.2" />
+      </div>
+    </div>
+
+    <!-- Manufacture Year -->
+    <div class="mt-12">
+      <label for="manYear"><strong>Manufacturing Year</strong></label>
+      <select id="manYear" aria-label="Manufacturing Year">
+        <option value="2018" data-mult="80000">2018 — Assessed = Tons × ₹80,000</option>
+        <option value="2019" data-mult="85000">2019 — Assessed = Tons × ₹85,000</option>
+        <option value="2020" data-mult="90000">2020 — Assessed = Tons × ₹90,000</option>
+        <option value="2021" data-mult="95000">2021 — Assessed = Tons × ₹95,000</option>
+        <option value="2023" data-mult="105000">2023 — Assessed = Tons × ₹105,000</option>
+        <option value="2024" data-mult="115000">2024 — Assessed = Tons × ₹115,000</option>
+        <option value="standard" data-mult="100000" selected>Standard — Assessed = Tons × ₹100,000</option>
+      </select>
+    </div>
+
+    <!-- Incoterm -->
+    <div class="mt-10" style="font-weight:700">Incoterm</div>
+    <div class="incoterm-row" role="radiogroup" aria-label="Incoterm">
+      <label><input type="radio" name="incoterm" value="FOB"> FOB</label>
+      <label><input type="radio" name="incoterm" value="CIF"> CIF</label>
+      <label><input type="radio" name="incoterm" value="FCA" checked> FCA (Door to Door)</label>
+    </div>
+
+    <!-- Controls -->
+    <div class="controls">
+      <button class="btn" id="calc">Calculate</button>
+      <button class="ghost" id="copyBtn">Copy CSV</button>
+      <button class="ghost" id="downloadBtn">Download PDF</button>
+    </div>
+
+    <!-- Assessed Box -->
+    <div class="assessed-box" id="assessedBox">
+      <div class="label">Assessed value (Tons × selected multiplier)</div>
+      <div class="value" id="assessedDisplay">—</div>
+    </div>
+  </div>
+
+  <!-- Right: Result Section -->
+  <div class="result-col">
+    <div class="result-top card" id="resultCard">
+      <div class="pdfHeader">
+        <div class="pdfBrand">PORTUS — Shipping Estimate</div>
+        <div class="pdfSmall" id="incotermNote">Using: FCA</div>
+      </div>
+
+      <div class="result-head">
+        <div>
+          <div style="font-weight:700">Portus Shipping Charges</div>
+          <div class="small-muted">Shipping-only (no GST shown on tile)</div>
+        </div>
+        <div style="text-align:right">
+          <div class="big" id="askNoGst">—</div>
+          <div class="small-muted">With GST: <span id="askWithGst">—</span></div>
+        </div>
+      </div>
+
+      <div class="line-items" id="shippingLines">
+        <div class="line"><div class="k">DO&SP (₹450/ton)</div><div class="v" id="dosp">—</div></div>
+        <div class="line"><div class="k">China Trucking</div><div class="v" id="truckDisplay">—</div></div>
+        <div class="line"><div class="k">Port / Agency / Stamp</div><div class="v" id="portAgencyStamp">—</div></div>
+        <div class="line"><div class="k">Total Variable</div><div class="v" id="totalVar">—</div></div>
+        <div class="line"><div class="k">Total Fixed</div><div class="v" id="totalFixed">—</div></div>
+        <div class="line"><div class="k">Total Cost</div><div class="v" id="totalCost">—</div></div>
+      </div>
+    </div>
+
+    <!-- Machine Landed Cost -->
+    <div class="landed card" id="machineLandedCard">
+      <h3>Machine Landed Cost (India)</h3>
+
+      <div class="row-item"><div>Portus Shipping (no GST)</div><div class="val" id="ml_portusShipping">—</div></div>
+      <div class="row-item"><div>Machine (INR)</div><div class="val" id="ml_machine">—</div></div>
+      <div class="row-item"><div>Import Duty (7.5%)</div><div class="val" id="ml_duty">—</div></div>
+      <div class="row-item"><div>Machine GST (18%)</div><div class="val" id="ml_gst">—</div></div>
+
+      <div class="row-item total"><div>Machine Landed (no GST)</div><div class="val" id="machine_nogst">—</div></div>
+      <div class="row-item total"><div>Machine Landed (with GST)</div><div class="val" id="machine_withgst">—</div></div>
+
+      <div class="small-note">
+        Machine landed numbers include Portus Shipping + Machine amounts. Duty &
+        Machine GST are calculated from the selected assessed value.
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© 2025 All Rights Reserved</p>
+</footer>
+
+  <script src="/script.js"></script>
+
+  
+<!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function () {
+    emailjs.init("YOUR_PUBLIC_KEY"); 
+  })();
+
+  document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", this)
+      .then(() => {
+        alert("✅ Message sent successfully!");
+        this.reset();
+      })
+      .catch((error) => {
+        console.error("❌ Error:", error);
+        alert("❌ Failed to send message. Please try again.");
+      });
+  });
+</script>
+
+<!-- Custom Cursor + Ripple -->
+<script>
+  const cursor = document.querySelector(".custom-cursor");
+  const follower = document.querySelector(".cursor-follower");
+
+  document.addEventListener("mousemove", (e) => {
+    cursor.style.left = e.clientX + "px";
+    cursor.style.top = e.clientY + "px";
+    gsap.to(follower, { x: e.clientX, y: e.clientY, duration: 0.2 });
+  });
+
+  document.addEventListener("click", (e) => {
+    const ripple = document.createElement("div");
+    ripple.className = "click-ripple";
+    ripple.style.left = e.clientX + "px";
+    ripple.style.top = e.clientY + "px";
+    document.body.appendChild(ripple);
+    setTimeout(() => ripple.remove(), 600);
+  });
+</script>
+
+<!-- Preloader -->
+<script>
+  let progress = 0;
+  const progressText = document.getElementById('progressText');
+  const loadingScreen = document.getElementById('loadingScreen');
+  const heroText = document.querySelector('.hero-text');
+
+  const progressInterval = setInterval(() => {
+    progress += Math.random() * 5;
+    if (progress >= 100) {
+      progress = 100;
+      clearInterval(progressInterval);
+
+      setTimeout(() => {
+        loadingScreen.classList.add('hidden');
+        setTimeout(() => heroText.classList.add('slide-up-fade'), 600);
+      }, 400);
+    }
+    progressText.textContent = String(Math.floor(progress)).padStart(2, '0') + '%';
+  }, 100);
+</script>
+
+<!-- Mobile Nav -->
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  navToggle.addEventListener('click', () => navLinks.classList.toggle('active'));
+</script>
+
+<!-- GSAP + ScrollTrigger -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<!-- Industry Scroll Animation -->
+<script>
+  const industryVideos = document.querySelectorAll("#industries-gallery .left video");
+  const industryTexts = document.querySelectorAll("#industries-gallery .right .text");
+  let currentIndustry = 0;
+
+  ScrollTrigger.create({
+    trigger: "#industries-gallery",
+    start: "top top",
+    end: "+=400%",
+    pin: true,
+    scrub: true,
+    onUpdate: (self) => {
+      let index = Math.floor(self.progress * industryVideos.length);
+      index = Math.min(index, industryVideos.length - 1);
+
+      if (index !== currentIndustry) {
+        industryVideos[currentIndustry].classList.remove("active");
+        industryTexts[currentIndustry].classList.remove("active");
+        industryVideos[index].classList.add("active");
+        industryTexts[index].classList.add("active");
+        currentIndustry = index;
+      }
+    }
+  });
+</script>
+
+<!-- Learn More Popup -->
+<script>
+  document.querySelectorAll('.learn-btn').forEach(btn => {
+    btn.addEventListener('click', () => alert('More details coming soon!'));
+  });
+</script>
+
+<!-- Iceberg Scroll -->
+<script>
+  gsap.to(".iceberg-2", {
+    x: -300,
+    scrollTrigger: {
+      trigger: ".hero",
+      start: "top top",
+      end: "bottom top",
+      scrub: true
+    }
+  });
+
+  gsap.to(".iceberg-3", {
+    x: 300,
+    scrollTrigger: {
+      trigger: ".hero",
+      start: "top top",
+      end: "bottom top",
+      scrub: true
+    }
+  });
+
+  let firstScrollDone = false;
+  window.addEventListener("wheel", (e) => {
+    if (!firstScrollDone && window.scrollY < window.innerHeight) {
+      e.preventDefault();
+      firstScrollDone = true;
+      document.querySelector("#intro").scrollIntoView({ behavior: "smooth" });
+    }
+  }, { passive: false });
+</script>
+
+<!-- Section Fade-in Animations -->
+<script>
+  gsap.utils.toArray("section .content, .new-section-content, .industries-container, .contact-form_left, .contact-form_right")
+    .forEach((el) => {
+      gsap.from(el, {
+        y: 80,
+        opacity: 0,
+        duration: 1.2,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: el,
+          start: "top 80%",
+          toggleActions: "play none none reverse"
+        }
+      });
+    });
+</script>
+
+<!-- Vanilla Tilt -->
+<script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.3/dist/vanilla-tilt.min.js"></script>
+<script>
+  const tiltCards = document.querySelectorAll(".glass-card");
+  VanillaTilt.init(tiltCards, {
+    max: 25,
+    speed: 400,
+    glare: true,
+    "max-glare": 0.5,
+    scale: 1.05
+  });
+</script>
+
+<!-- Background Music -->
+<script>
+  const audio = document.getElementById("bg-music");
+  const soundBtn = document.getElementById("sound-toggle");
+
+  window.addEventListener("load", () => {
+    audio.volume = 0.5;
+    audio.play().catch(() => console.log("Autoplay blocked — user must click first."));
+  });
+
+  soundBtn.addEventListener("click", () => {
+    if (audio.paused) {
+      audio.play();
+      soundBtn.classList.remove("muted");
+    } else {
+      audio.pause();
+      soundBtn.classList.add("muted");
+    }
+  });
+</script>
+
+</body>
+
+</html>
