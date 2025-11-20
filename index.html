@@ -307,6 +307,18 @@
   <section class="industries-section" id="industries-gallery">
  <h2 class="section-titles">Tailored Logistics for Your Industry.</h2>
 
+     <!-- MOBILE LEFT MENU -->
+    <div class="left-menu">
+      <span>01</span>
+      <span>02</span>
+      <span>03</span>
+      <span>04</span>
+      <span>05</span>
+      <span>06</span>
+      <span>07</span>
+      <span>08</span>
+    </div>
+
     <div class="left">
       <video src="imgs/vdo1.webm" class="active" autoplay muted loop></video>
       <video src="imgs/vdo2.webm" autoplay muted loop></video>
@@ -404,109 +416,171 @@
   </section>
 
   <style>
-     .industries-section {
-  display: flex;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  position: relative;
-}
+    .industries-section {
+      display: flex;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+    }
 
-.industries-section .left,
-.industries-section .right {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
+    .industries-section .left,
+    .industries-section .right {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
 
 
-.section-titles {
-  position: absolute;
-  top: 10%;
-  font-size: 28px;
-  font-weight: 600;
-  color: #c6cbcb;
-  text-align: center;
-}
+    .section-titles {
+      position: absolute;
+      top: 10%;
+      font-size: 28px;
+      font-weight: 600;
+      color: #c6cbcb;
+      text-align: center;
+    }
 
-/* Video (acts like image) */
-.industries-section .left video {
-  width: 460px;
-  max-width: 460px;
-  height: auto;
-  border-radius: 12px;
-  opacity: 0;
-  position: absolute;
-  transition: opacity 0.6s ease;
-  object-fit: cover;
-}
+    .industries-section .left video {
+      width: 460px;
+      max-width: 460px;
+      height: auto;
+      border-radius: 12px;
+      opacity: 0;
+      position: absolute;
+      transition: opacity 0.6s ease;
+      object-fit: cover;
+    }
 
-.industries-section .left video.active {
-  opacity: 1;
-  position: relative;
-}
+    .industries-section .left video.active {
+      opacity: 1;
+      position: relative;
+    }
 
-/* Text Fade */
-.industries-section .right .text {
-  position: absolute;
-  top: 40%;
-  max-width: 400px;
-  opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
+    /* Text Fade */
+    .industries-section .right .text {
+      position: absolute;
+      top: 38%;
+      max-width: 520px;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+      color: #e5e5e5;
+      padding-left: 60px;
+      /* space for numbers (left menu) */
+    }
 
-.industries-section .right .text.active {
-  opacity: 1;
-  transform: translateY(0);
-}
+    .industries-section .right .text.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
 
-/* =========================
-   MOBILE — KEEP SAME LAYOUT
-   ========================= */
-/* Desktop (keep sticky) */
-.industries-section .left {
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+    .industries-section .right .text h4 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 14px;
+      color: #ffffff;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
 
-/* VIDEO fits nicely */
-.industries-section .left video {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
+    /* PARAGRAPH STYLE */
+    .industries-section .right .text p {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #c8c8c8;
+      letter-spacing: 0.3px;
+    }
 
-/* MOBILE RESPONSIVE FIX */
-@media (max-width: 1024px) {
 
-  /* Turn OFF sticky on mobile */
-  .industries-section .left {
-    position: relative;
-    height: auto;
-    top: unset;
-    order: 2; /* video goes BELOW text */
-  }
+    .industries-section .left {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-  /* Text goes on TOP */
-  .industries-section .right {
-    order: 1;
-  }
 
-  /* Video stays center */
-  .industries-section .left video {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-  }
-} 
+    .industries-section .left video {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+
+    @media (max-width: 1024px) {
+
+
+      .industries-section .left {
+        position: relative;
+        height: auto;
+        top: unset;
+        order: 2;
+        top: 40px;
+      }
+
+
+      .industries-section .right {
+        order: 1;
+        bottom: 161px;
+        width: 380px;
+        text-align: start;
+      }
+
+
+      .industries-section .left video {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+
+    .left-menu {
+      display: none;
+      /* hidden on desktop */
+    }
+
+    @media (max-width: 1024px) {
+
+      /* SHOW left number menu */
+      .left-menu {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: -176px;
+        top: 179px;
+        margin-bottom: 20px;
+        gap: 10px;
+
+        display: flex;
+        /* position: absolute; */
+
+        transform: translateY(0);
+
+
+        z-index: 15;
+      }
+
+      .left-menu span {
+        font-size: 16px;
+        color: white;
+        font-weight: 600;
+        opacity: 0.6;
+        transition: 0.3s ease;
+      }
+
+      .left-menu span.active {
+        color: #fff;
+         opacity: 1;
+        font-weight: 800;
+        transform: scale(1.15);
+      }
+    }
   </style>
 
 
